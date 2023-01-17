@@ -1,23 +1,114 @@
-{% extends '_layout.swig' %}
-{% import '_macro/post.swig' as post_template %}
-{% import '_macro/sidebar.swig' as sidebar_template %}
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <title>John Doe的个人博客</title>
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    
+<link rel="stylesheet" href="/css/meethigher-font.css">
 
-{% block title %}{{ config.title }}{% if theme.index_with_subtitle and config.subtitle %} - {{config.subtitle }}{% endif %}{% endblock %}
+    
+<link rel="stylesheet" href="/css/index.css">
 
-{% block page_class %}
-  {% if is_home() %}page-home{% endif -%}
-{% endblock %}
+    
+<link rel="stylesheet" href="/css/viewer.min.css">
 
-{% block content %}
-  <section id="posts" class="posts-expand">
-    {% for post in page.posts %}
-      {{ post_template.render(post, true) }}
-    {% endfor %}
-  </section>
+<meta name="generator" content="Hexo 6.3.0"></head>
 
-  {% include '_partials/pagination.swig' %}
-{% endblock %}
+<body>
+<header class="header">
+    <div class="header-menu"><span class="fa fa-bars"></span></div>
+    <div class="header-search"><span class="fa fa-search"></span></div>
+    <div class="header-title"><a href="/">Hexo<span class="header-subtitle"> | </span></a></div>
+    <ul class="header-navbar clearFix">
+        
+            <li><a href="/">主页</a></li>
+        
+            <li><a href="/tags">标签</a></li>
+        
+            <li><a href="/archives">归档</a></li>
+        
+            <li><a href="/about">关于</a></li>
+        
+    </ul>
+</header>
+<div id="particles-js"></div>
 
-{% block sidebar %}
-  {{ sidebar_template.render(false) }}
-{% endblock %}
+<script src="/js/module/particles.min.js"></script>
+
+
+<script src="/js/module/app.js"></script>
+
+<div class="search" title="站内搜索"><span class="fa fa-search"></span></div>
+
+<div class="tool">
+    <div class="up" title="返回顶部"><span class="fa fa-arrow-circle-up"></span></div>
+    <div class="down" title="返回底部"><span class="fa fa-arrow-circle-down"></span></div>
+    <a href="/app.apk" class="app" title="下载App" download="app.apk"><span class="fa fa-android"></span></a>
+</div>
+
+<main class="main">
+    <div class="main-content">
+    <div class="main-content-post">
+        
+            <article class="post">
+                <div class="post-title">
+                    <a href="/2023/01/17/hello-world/">
+                        
+                        Hello World</a>
+                </div>
+                <div class="post-excerpt">
+                    
+                </div>
+                <div class="post-content">
+                    <a href="/2023/01/17/hello-world/">阅读全文</a>
+                    
+                </div>
+                <div class="post-media">
+                    <span class="post-time">posted&nbsp;@&nbsp;2023-01-17 16:40:40</span>
+                </div>
+            </article>
+        
+        <div class="post-nav">
+    
+</div>
+        <div class="footer">
+            <span style="display:none" class="begin">2019/09/15 19:57:09</span>
+            网站运行时间<span id="d"></span>天<span id="h"></span>时<span id="m"></span>分<span id="s"></span>秒<br>
+            
+                <span id="container_site_uv">访客数<span
+                            id="value_site_uv">calculating</span>人</span></div>
+            <script>let requestUrl=window.location.href.replace(/http:\/\/|https:\/\//,"");function sendPost(url,requestUrl){let xhr=new XMLHttpRequest();xhr.onreadystatechange=function(){if(xhr.readyState==4&&xhr.status==200){let result=xhr.responseText;document.getElementById("value_site_uv").innerText=result}};xhr.open("POST",url,true);xhr.setRequestHeader("origin-referer",document.referrer);xhr.send(requestUrl)}sendPost("https://meethigher.top/census/count/",requestUrl)</script>
+        
+    </div>
+</div>
+</main>
+
+<script src="/js/module/jquery.min.js"></script>
+
+
+<script src="/js/module/viewer.min.js"></script>
+
+
+<script src="/js/module/jquery-viewer.min.js"></script>
+
+
+<script src="/js/module/layer/layer.js"></script>
+
+
+<script src="/js/check-ua.js"></script>
+
+
+<script src="/js/module/instantpage.js"></script>
+
+
+<script src="/js/meethigher.js"></script>
+
+</body>
+</html>
